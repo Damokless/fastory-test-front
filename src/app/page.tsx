@@ -1,11 +1,9 @@
-'use client'
-
-import { Button } from '@heroui/react'
+import Search from '@/components/Search'
 
 export default function Home() {
     return (
-        <div>
-            <Button>test</Button>
+        <div className='flex justify-center items-center w-screen'>
+            <Search />
         </div>
     )
 }
