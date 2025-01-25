@@ -1,0 +1,177 @@
+{
+    "root": true,
+    "parserOptions": {
+        "ecmaVersion": "latest"
+    },
+    "env": {
+        "browser": true,
+        "es6": true,
+        "node": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "next/core-web-vitals",
+        "next/typescript"
+    ],
+    "plugins": [],
+    "settings": {
+        "tailwindcss": {
+            "cssFiles": [
+                "src/assets/styles"
+            ],
+            "callees": [
+                "classnames",
+                "cn"
+            ],
+            "whitelist": [
+                "fa-"
+            ]
+        }
+    },
+    "rules": {
+        "indent": [
+            "error",
+            4
+        ],
+        "max-len": [
+            "error",
+            {
+                "code": 120,
+                "ignoreStrings": true,
+                "ignoreUrls": true,
+                "ignoreRegExpLiterals": true
+            }
+        ],
+        "semi": [
+            "error",
+            "never",
+            {
+                "beforeStatementContinuationChars": "never"
+            }
+        ],
+        "no-extra-semi": "error",
+        "comma-dangle": "error",
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "quote-props": [
+            "error",
+            "as-needed",
+            {
+                "keywords": true
+            }
+        ],
+        "jsx-quotes": [
+            "warn",
+            "prefer-single"
+        ],
+        "arrow-parens": [
+            "warn",
+            "always"
+        ],
+        "key-spacing": [
+            "error",
+            {
+                "multiLine": {
+                    "beforeColon": false,
+                    "afterColon": true
+                },
+                "align": {
+                    "beforeColon": false,
+                    "afterColon": true,
+                    "on": "colon"
+                }
+            }
+        ],
+        "brace-style": [
+            "error",
+            "stroustrup"
+        ],
+        "padding-line-between-statements": [
+            "error",
+            {
+                "blankLine": "always",
+                "prev": "*",
+                "next": "*"
+            },
+            {
+                "blankLine": "never",
+                "prev": "import",
+                "next": "import"
+            }
+        ],
+        "one-var-declaration-per-line": [
+            "error",
+            "always"
+        ],
+        "prefer-const": "error",
+        "no-trailing-spaces": "error",
+        "no-await-in-loop": "error",
+        "no-multi-assign": "error",
+        "no-multi-spaces": [
+            "error",
+            {
+                "exceptions": {
+                    "TSPropertySignature": true,
+                    "Property": true
+                }
+            }
+        ],
+        "no-multiple-empty-lines": [
+            "error",
+            {
+                "max": 1,
+                "maxBOF": 0,
+                "maxEOF": 1
+            }
+        ],
+        "no-implicit-coercion": "error",
+        "object-curly-newline": [
+            "error",
+            {
+                "ImportDeclaration": {
+                    "consistent": true
+                },
+                "ObjectPattern": {
+                    "consistent": true
+                },
+                "ObjectExpression": {
+                    "multiline": true,
+                    "minProperties": 2
+                }
+            }
+        ],
+        "object-curly-spacing": [
+            "error",
+            "always"
+        ],
+        "object-property-newline": [
+            "error",
+            {
+                "allowAllPropertiesOnSameLine": false
+            }
+        ],
+        "array-bracket-newline": [
+            "error",
+            {
+                "multiline": true,
+                "minItems": null
+            }
+        ],
+        "array-bracket-spacing": [
+            "error",
+            "never"
+        ],
+        "array-element-newline": [
+            "error",
+            {
+                "ArrayExpression": {
+                    "multiline": true,
+                    "minItems": 2
+                },
+                "ArrayPattern": "consistent"
+            }
+        ]
+    }
+}
