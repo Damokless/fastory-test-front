@@ -1,5 +1,5 @@
 "use client";
-import Setvalue from "@/interfaces/setvalue";
+import Setvalue from "@/interfaces/setvalue_types";
 import { Autocomplete, AutocompleteItem } from "@heroui/react";
 import { useState } from "react";
 

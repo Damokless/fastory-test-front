@@ -1,4 +1,4 @@
-import Spaceships from "@/interfaces/startships";
+import Spaceships from "@/interfaces/startships_types";
 import { Card, CardBody, } from "@heroui/react";
 
 export default function StarshipsCard({ starships_data }: Readonly<Spaceships>) {
