@@ -26,7 +26,6 @@ export default function Search({setValue} : Readonly<Setvalue>) {
         setIsDisabled(false)
 
     }
-    console.log(allData)
     return (
         <div className="w-full h-full flex flex-col justify-center items-center gap-3 mb-12 md:mb-0">
             <Autocomplete

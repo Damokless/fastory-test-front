@@ -2,7 +2,6 @@ import Film from "@/interfaces/film_types";
 import { Card, Image, CardFooter } from "@heroui/react";
 
 export default function FilmsCard({ film_data }: Readonly<Film>) {
-    console.log(film_data)
     return (
         <Card isBlurred isFooterBlurred className="border-none h-3/5 w-3/5" radius="lg">
             <Image
