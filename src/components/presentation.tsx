@@ -1,3 +1,4 @@
+import SelectionData from "@/interfaces/selectionData_types";
 import FilmsCard from "./cards/films";
 import PeopleCard from "./cards/people";
 import PlanetCard from "./cards/planets";
@@ -5,8 +6,8 @@ import SpeciesCard from "./cards/species";
 import SpaceshipsCard from "./cards/startships";
 import VehiclesCard from "./cards/vehicles";
 
-export default function Presentation({ selectionData }) {
-    const selectionType = selectionData.url.match(/(?<=https:\/\/swapi\.dev\/api\/)(.*?)(?=\/\d+\/)/gm)
+export default function Presentation({ selectionData } : Readonly<SelectionData>) {
+    const selectionType = selectionData.url.match(/(?<=https:\/\/swapi\.dev\/api\/)(.*?)(?=\/\d+\/)/gm) || ''
     if (selectionType[0] === 'people') {
         return <PeopleCard people_data={selectionData} />
     }
